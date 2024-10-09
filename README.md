@@ -1,4 +1,5 @@
 ## Fancode City
+This project tests whether all users from the city of FanCode have completed more than 50% of their todo tasks. 
 
 ### Clone Project
 
@@ -22,3 +23,8 @@
 
 4. Run the script using PyTest
 ```pytest -s```
+
+### Project Structure:
+- `src/`: Contains all the logic, APIs, and utility functions.
+- `tests/`: Contains the test file along with testcases.
+- `requirements.txt`: Lists the dependencies for the project.
