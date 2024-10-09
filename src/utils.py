@@ -1,5 +1,4 @@
-def is_fancode_city(user):
-    """Determines if a user belongs to FanCode city based on latitude and longitude."""
+def fancode_city(user):
     try:
         lat = float(user['address']['geo']['lat'])
         lng = float(user['address']['geo']['lng'])
@@ -7,8 +6,7 @@ def is_fancode_city(user):
     except (KeyError, ValueError):
         return False
 
-def calculate_task_completion_percentage(todos):
-    """Calculates the percentage of completed tasks for a user's todos."""
+def task_completion_rate(todos):
     total_tasks = len(todos)
     if total_tasks == 0:
         return 0
